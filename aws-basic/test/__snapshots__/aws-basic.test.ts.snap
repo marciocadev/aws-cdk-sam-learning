@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot 1`] = `
+Object {
+  "Parameters": Object {
+    "AssetParameters837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87aArtifactHash46D722E7": Object {
+      "Description": "Artifact hash for asset \\"837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87a\\"",
+      "Type": "String",
+    },
+    "AssetParameters837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87aS3Bucket93DEF033": Object {
+      "Description": "S3 bucket for asset \\"837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87a\\"",
+      "Type": "String",
+    },
+    "AssetParameters837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87aS3VersionKey32CF0C18": Object {
+      "Description": "S3 key for asset version \\"837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87a\\"",
+      "Type": "String",
+    },
+  },
+  "Resources": Object {
+    "BasicTableD462653D": Object {
+      "DeletionPolicy": "Retain",
+      "Properties": Object {
+        "AttributeDefinitions": Array [
+          Object {
+            "AttributeName": "MyTestStack",
+            "AttributeType": "S",
+          },
+        ],
+        "KeySchema": Array [
+          Object {
+            "AttributeName": "MyTestStack",
+            "KeyType": "HASH",
+          },
+        ],
+        "ProvisionedThroughput": Object {
+          "ReadCapacityUnits": 5,
+          "WriteCapacityUnits": 5,
+        },
+        "TableName": "basic-db",
+      },
+      "Type": "AWS::DynamoDB::Table",
+      "UpdateReplacePolicy": "Retain",
+    },
+    "PostLambda0EF1C7F9": Object {
+      "DependsOn": Array [
+        "PostLambdaServiceRoleDefaultPolicy1E8FF5CA",
+        "PostLambdaServiceRole1CD56985",
+      ],
+      "Properties": Object {
+        "Code": Object {
+          "S3Bucket": Object {
+            "Ref": "AssetParameters837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87aS3Bucket93DEF033",
+          },
+          "S3Key": Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                Object {
+                  "Fn::Select": Array [
+                    0,
+                    Object {
+                      "Fn::Split": Array [
+                        "||",
+                        Object {
+                          "Ref": "AssetParameters837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87aS3VersionKey32CF0C18",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                Object {
+                  "Fn::Select": Array [
+                    1,
+                    Object {
+                      "Fn::Split": Array [
+                        "||",
+                        Object {
+                          "Ref": "AssetParameters837adb1ed2a9a0e09cd6a966621962463a7221c732709840571f0cd76e75a87aS3VersionKey32CF0C18",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            ],
+          },
+        },
+        "Environment": Object {
+          "Variables": Object {
+            "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+          },
+        },
+        "FunctionName": "basic-post",
+        "Handler": "index.handler",
+        "Role": Object {
+          "Fn::GetAtt": Array [
+            "PostLambdaServiceRole1CD56985",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs14.x",
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "PostLambdaServiceRole1CD56985": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": Object {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": Array [
+          Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                "arn:",
+                Object {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
+    "PostLambdaServiceRoleDefaultPolicy1E8FF5CA": Object {
+      "Properties": Object {
+        "PolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": Array [
+                "dynamodb:BatchWriteItem",
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:DeleteItem",
+              ],
+              "Effect": "Allow",
+              "Resource": Array [
+                Object {
+                  "Fn::GetAtt": Array [
+                    "BasicTableD462653D",
+                    "Arn",
+                  ],
+                },
+                Object {
+                  "Ref": "AWS::NoValue",
+                },
+              ],
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "PostLambdaServiceRoleDefaultPolicy1E8FF5CA",
+        "Roles": Array [
+          Object {
+            "Ref": "PostLambdaServiceRole1CD56985",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+  },
+}
+`;

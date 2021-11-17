@@ -1,0 +1,622 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsBasicStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsBasicStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AwsBasicStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "/home/marcio/dev/aws-cdk-sam-learning/aws-basic/.aws-sam/.cdk-out/asset.a1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273",
+              "id": "a1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273",
+              "packaging": "zip",
+              "sourceHash": "a1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273",
+              "s3BucketParameter": "AssetParametersa1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273S3Bucket0160A265",
+              "s3KeyParameter": "AssetParametersa1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273S3VersionKey870DFF68",
+              "artifactHashParameter": "AssetParametersa1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273ArtifactHashD02E35D3"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AwsBasicStack.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NodejsFunction (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:53:5)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:19:21)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "BasicTableD462653D"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "new Table (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:710:38)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:11:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicTableD462653D",
+            "trace": [
+              "new Table (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:681:18)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:11:19)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/PostLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostLambdaServiceRole1CD56985",
+            "trace": [
+              "new Role (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "new NodejsFunction (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:53:5)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:19:21)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/PostLambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostLambdaServiceRoleDefaultPolicy1E8FF5CA",
+            "trace": [
+              "new Policy (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:525:29)",
+              "Table.grantWriteData (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:345:17)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:24:11)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/PostLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostLambda0EF1C7F9",
+            "trace": [
+              "new Function (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "new NodejsFunction (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:53:5)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:19:21)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/AssetParameters/a1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273S3Bucket0160A265",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AwsBasicStack.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NodejsFunction (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:53:5)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:19:21)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/AssetParameters/a1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273S3VersionKey870DFF68",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AwsBasicStack.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NodejsFunction (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:53:5)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:19:21)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/AssetParameters/a1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersa1189057869ae010073b39cd89614186261e0ab21be652971f4b838bdb527273ArtifactHashD02E35D3",
+            "trace": [
+              "new FileAssetParameters (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "AwsBasicStack.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NodejsFunction (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:53:5)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:19:21)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRest53EE2B49",
+            "trace": [
+              "new RestApi (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:463:22)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:26:18)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestCloudWatchRoleA79EFEF0",
+            "trace": [
+              "new Role (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "RestApi._configureCloudWatchRole (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:289:18)",
+              "new RestApi (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:26:18)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestAccount9DC45B13",
+            "trace": [
+              "RestApi._configureCloudWatchRole (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:294:22)",
+              "new RestApi (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:26:18)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestDeployment6F3618B3e9fd0c52b2b43f2b55481b59ab7a9b95",
+            "trace": [
+              "new Deployment (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
+              "RestApi._configureDeployment (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:318:32)",
+              "new RestApi (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:26:18)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestDeploymentStageprod60D8B9E1",
+            "trace": [
+              "new Stage (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:136:22)",
+              "RestApi._configureDeployment (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:328:30)",
+              "new RestApi (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:26:18)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestEndpoint9122A164",
+            "trace": [
+              "RestApi._configureDeployment (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:333:7)",
+              "new RestApi (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:26:18)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Default/basic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestbasic9DB00D38",
+            "trace": [
+              "new Resource (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "RootResource.addResource (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:91:12)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:29:32)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Default/basic/post/ApiPermission.AwsBasicStackBasicRestA43E72EC.POST..basic": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestbasicpostApiPermissionAwsBasicStackBasicRestA43E72ECPOSTbasic4008E8D9",
+            "trace": [
+              "NodejsFunction.addPermission (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:30:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Default/basic/post/ApiPermission.Test.AwsBasicStackBasicRestA43E72EC.POST..basic": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestbasicpostApiPermissionTestAwsBasicStackBasicRestA43E72ECPOSTbasicF13E7AFF",
+            "trace": [
+              "NodejsFunction.addPermission (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "Resource.addMethod (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:30:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/BasicRest/Default/basic/post/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BasicRestbasicpost525BAE87",
+            "trace": [
+              "new Method (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "Resource.addMethod (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "new AwsBasicStack (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/lib/aws-basic-stack.ts:30:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/bin/aws-basic.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AwsBasicStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/AwsBasicStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/marcio/dev/aws-cdk-sam-learning/aws-basic/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AwsBasicStack"
+    }
+  }
+}

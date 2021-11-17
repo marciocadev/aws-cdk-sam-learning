@@ -1,0 +1,39 @@
+{
+  "name": "aws-basic",
+  "version": "0.1.0",
+  "bin": {
+    "aws-basic": "bin/aws-basic.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:coverage": "npm run test -- --coverage",
+    "test:update": "npm run test -- --updateSnapshot",
+    "test:infra": "npm run test -- test/aws-basic.test.ts",
+    "test:lambdas": "npm run test -- test/src/*",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assertions": "^1.131.0",
+    "@aws-sdk/client-dynamodb": "^3.40.0",
+    "@types/aws-lambda": "^8.10.85",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "@types/uuid": "^8.3.1",
+    "aws-cdk": "1.130.0",
+    "aws-xray-sdk": "^3.3.3",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.131.0",
+    "@aws-cdk/aws-dynamodb": "^1.131.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.131.0",
+    "@aws-cdk/core": "^1.131.0",
+    "source-map-support": "^0.5.16"
+  }
+}
